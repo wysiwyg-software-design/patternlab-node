@@ -179,12 +179,12 @@ module.exports = function (grunt) {
   //load the patternlab task
   grunt.task.loadTasks('./core/lib/');
 
-  grunt.registerTask('default', ['patternlab', 'copy:main', 'copy:styleguide']);
+  grunt.registerTask('default', ['patternlab', 'copy:all']);
 
   //travis CI task
   grunt.registerTask('travis', ['nodeunit', 'eslint', 'patternlab']);
 
-  grunt.registerTask('serve', ['patternlab', 'copy:main', 'copy:styleguide', 'browserSync', 'watch:all']);
+  grunt.registerTask('serve', ['patternlab', 'copy:all', 'browserSync', 'watch:patterns', 'watch:styles', 'watch:js']);
 
   grunt.registerTask('build', ['nodeunit', 'eslint', 'concat']);
 
