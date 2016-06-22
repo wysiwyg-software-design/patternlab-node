@@ -44,7 +44,9 @@
   "scripts": {
     "test": "grunt travis --verbose"
   },
+  "engine-strict": true,
   "engines": {
-    "node": ">=4.0"
-  }
+    "node": ">=5.0"
+  },
+
 }
