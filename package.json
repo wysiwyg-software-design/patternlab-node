@@ -47,6 +47,5 @@
   "engine-strict": true,
   "engines": {
     "node": ">=5.0"
-  },
-
+  }
 }
